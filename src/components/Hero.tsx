@@ -53,6 +53,6 @@ export const Hero = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-card section-wave"></div>
+      
     </section>;
 };
