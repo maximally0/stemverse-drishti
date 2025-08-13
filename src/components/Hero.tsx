@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import robotMascot from "@/assets/robot-mascot.png";
 export const Hero = () => {
   return <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
@@ -45,9 +46,11 @@ export const Hero = () => {
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <Button variant="outline-playful" size="lg" className="text-lg px-8 py-4">
-            See what's coming
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button variant="outline-playful" size="lg" className="text-lg px-8 py-4" asChild>
+            <Link to="/coming-soon">
+              See what's coming
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </Button>
         </div>
       </div>
