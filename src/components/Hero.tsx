@@ -1,10 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
-import robotMascot from "@/assets/robot-mascot.png"
-
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
+import robotMascot from "@/assets/robot-mascot.png";
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
+  return <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
       {/* Background Doodles */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-12 h-12 text-stemverse-yellow doodle-bounce">
@@ -27,11 +25,7 @@ export const Hero = () => {
 
         {/* Robot Mascot */}
         <div className="mb-8 flex justify-center">
-          <img 
-            src={robotMascot} 
-            alt="Friendly STEMVERSE robot mascot waving hello" 
-            className="w-48 h-48 md:w-64 md:h-64 doodle-float"
-          />
+          
         </div>
 
         {/* Headline */}
@@ -60,6 +54,5 @@ export const Hero = () => {
 
       {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-card section-wave"></div>
-    </section>
-  )
-}
+    </section>;
+};
